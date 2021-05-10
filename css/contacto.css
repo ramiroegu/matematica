@@ -1,0 +1,44 @@
+.columna{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 0.6em;
+}
+
+.columna.left {/* todo junto para q sepa que es solo el primer comlumna */
+border-right: 2px solid rgb(243, 122, 8);
+}
+.columna.right p {
+    font-size: 0.8em;
+}
+.columna.right ul li {
+    font-size: 0.8em;
+}
+.formulario label{
+    vertical-align: top;
+    width: 22%;
+    display: inline-block;
+}
+.formulario input,
+.formulario textarea {
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 0.8em;
+    padding: 0.4em 0.6em;
+    width: 70%;
+}
+.formulario textarea {
+    height: 10em;
+    resize: none;/* saca las lineas de abajo que controla el textearea */
+}
+.formulario input[ type="submit"]{
+    background-color: rgb(243, 122, 8);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: white;
+    font-size: 1em;
+    padding: 0.4em 0.2em;
+    width: auto;/* resetea el ancho anterior */
+}
+.formulario .acciones{
+    text-align: center;
+}

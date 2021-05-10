@@ -1,0 +1,44 @@
+.servicio{
+    border: 1px solid #ccc;
+    border-radius:  0.7em;
+    margin: 1em 0;
+    padding:  1em;
+    overflow: hidden;/* revela lo oculto y separa  */
+}
+.servicio .info{
+        width: 75%;
+}
+.servicio figure img{
+        border-radius: 0.8em;
+}
+.servicio .info h4{
+        color: rgb(238, 214, 192);
+        font-size: 1.2em;
+        font-style: italic;
+        font-weight: 500;
+        margin: 0 0 1em;
+        border-bottom: 1px solid rgb(238, 214, 192);
+        padding-bottom: 0.5em;
+}
+.servicio .info p{
+     font-size: 0.8em;
+    
+}
+.servicio:nth-child(odd) figure{
+        float: left;
+        margin: 0 1em 0 0;
+} /*impar manda la imagen impar a la izquieda con esos margenes  */
+.servicio:nth-child(odd) .info{
+       float: right;
+        
+}/* impar manda la info a la derecha cuando es impar */
+.servicio:nth-child(even) figure{
+        float: right;
+        margin: 0 0 0 1em;
+}/* par */
+.servicio:nth-child(even) .info{
+        float: left;
+        
+    
+} /*par el texto flota a la izquierda  */
+    /* fin servicios */ 

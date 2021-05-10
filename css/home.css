@@ -1,0 +1,173 @@
+/* font-family: 'Bangers', cursive; */
+.top-icon {/* revisar y ajustar */
+    background: rgb(238, 214, 192);
+    border-bottom: 3px solid #cd2122;
+    height: 17px;
+    z-index: 3;
+    position: relative;
+    float: right;
+}
+/* fuentes iconos */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?w1kjpq');
+    src:  url('fonts/icomoon.eot?w1kjpq#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?w1kjpq') format('truetype'),
+      url('fonts/icomoon.woff?w1kjpq') format('woff'),
+      url('fonts/icomoon.svg?w1kjpq#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+.icon-facebook:before,
+.icon-instagram1:before,
+.icon-microsoftoutlook:before,
+.icon-whatsapp1:before,
+.icon-youtube:before {
+    font-family: 'icomoon';
+    font-size: 18px;
+    margin-left: 5px;
+}
+.icon-facebook:before {
+    content: "\e900";
+    color: #1877f2;
+}
+.icon-instagram1:before {
+  content: "\e901";
+    color: #e4405f;
+}
+.icon-microsoftoutlook:before {
+    content: "\e902";
+    color: #0072c6;
+}
+.icon-whatsapp1:before {
+    content: "\e903";
+    color: #25d366;
+}
+.icon-youtube:before {
+    content: "\e904";
+    color: #f00;
+}
+  
+/* fin de fuentes */
+body{
+    font-family: 'Bangers', cursive; 
+    font-size: 18px;
+    line-height: 20px;
+}
+
+header{
+background-color: rgb(243, 122, 8);
+padding: 1em 0;
+}
+header h1{
+    color: white;
+    font-size: 2em;
+    font-style: initial;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;/* lo pongop para moverlo con el bottom , sino cambia el cabezal en vez del cartel*/
+    bottom: 40px;
+    margin-left: 10px;
+}
+h2{
+    font-weight: 400;
+    color: rgb(243, 122, 8);
+    margin: 0 0 1em;
+
+}
+
+.holder{
+    width: 960px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: rgb(238, 214, 192);
+    margin-bottom: 20px;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline-block;
+    width: 16.3%;/* modificar porcentaje dependiendo cuantos menu vas a poner */
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 0.2em 0.4em;
+    text-align: center;
+    display: block;
+}
+nav ul li a:hover{
+    background-color: rgb(243, 122, 8);
+}
+nav ul li a.activo{
+    background-color: rgb(247, 150, 59);
+}
+main img{
+    width: 100%;
+    text-align: center
+      
+} 
+footer{
+    background-color:  rgb(243, 122, 8);
+    padding: 3em 0;
+    text-align: center;
+    clear: both;
+    margin-top: 20px; 
+}
+.holder{
+    width: 960px;
+    margin: 0 auto;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.columnas{
+    overflow: hidden;
+    
+}
+
+/* inicio de home */
+.homeimg{
+    margin-bottom: 1.5em;
+}
+
+.bienvenidos{
+    width: 75%;
+   padding-right: 2em;
+}
+
+.testimonios{
+    width: 25%;
+}
+.bienvenidos, .testimonios{
+    box-sizing: border-box;
+}/* funciona con padding y borde calcula y modifica todo para que no se caiga las cajas, mantienen el porcentaje  */
+.bienvenidos p{
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+.testimonio{
+    background-color: #ccc;
+    padding: 1em;
+}
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.4em;
+    display: block;
+}
+.testimonio .autor{
+    font-weight: 0.7em;
+    text-align: center;
+    margin: 1em 0;
+    display: block;
+}
